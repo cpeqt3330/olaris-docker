@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "updating olaris-server"
+cd /opt
+curl -vL 'https://gitlab.com/api/v4/projects/olaris%2Folaris-server/jobs/artifacts/master/download?job=compile' > /opt/build.zip && unzip /opt/build.zip
+echo "running olaris-server"
+/opt/binaries/olaris-server-linux
