@@ -1,6 +1,5 @@
 ## Olaris Docker images
 
-
 ### Build
 
 `docker build . --tag olaris-server`
