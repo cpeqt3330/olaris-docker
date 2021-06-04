@@ -9,5 +9,6 @@ echo "Trying to configure rclone..."
 echo -e "$RCLONE_CONFIG" > rclone.conf
 
 export OLARIS_SERVER_PORT=$PORT
-
+echo "PORT IS"
+echo "$PORT"
 echo $PATH > PATH
