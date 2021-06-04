@@ -8,4 +8,7 @@ export PATH=$PWD/rclone-v1.53.0-linux-amd64:$PATH
 echo "Trying to configure rclone..."
 echo -e "$RCLONE_CONFIG" > rclone.conf
 
+export OLARIS_SERVER_PORT=9989
+export PORT=9989
+
 echo $PATH > PATH
