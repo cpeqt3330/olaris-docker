@@ -4,6 +4,10 @@ RUN     apt-get -y update && \
         apt-get -y --no-install-recommends install curl ca-certificates unzip && \
         apt-get autoremove -y && apt-get clean -y
 
+ADD setup.sh .
+RUN chmod +x setup.sh
+RUN bash setup.sh
+
 ADD run-olaris /opt/run-olaris
 EXPOSE 8080
 
