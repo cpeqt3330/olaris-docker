@@ -9,7 +9,7 @@ RUN chmod +x setup.sh
 RUN bash setup.sh
 
 ADD run-olaris /opt/run-olaris
-EXPOSE 9989
+EXPOSE $PORT
 
 ENV LOGTOSTDERR=1
 ENV V=4
