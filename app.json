@@ -13,5 +13,11 @@
 
 
   "website": "",
-  "repository": ""
+  "repository": "",
+  "buildpacks": [
+		      {
+    {
+			"url": "heroku/python"
+		}
+	]
  }
