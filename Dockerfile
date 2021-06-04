@@ -9,7 +9,7 @@ RUN chmod +x setup.sh
 RUN bash setup.sh
 
 ADD run-olaris /opt/run-olaris
-EXPOSE 8080
+EXPOSE 9989
 
 ENV LOGTOSTDERR=1
 ENV V=4
